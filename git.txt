@@ -1,0 +1,8 @@
+//if we want to know version of git
+git --varsion
+// if you whant to know what is user name and email in gitbash
+cat .gitconfig
+//if you want help
+git help
+//for start project and create repository we must be go on goal directory and type this command
+git init

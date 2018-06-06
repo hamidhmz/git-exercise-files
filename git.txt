@@ -40,6 +40,28 @@ git diff
 git diff git.txt
 //if you want to know what is added to staged section 
 git diff --staged
+//if you want to see just what is change blew command can show you
+git diff --color-words
 
 //if you wanna delete a file you have two option for that 1 you can just delete that and add ./ and commit 2 you just write blow command
 git rm file.txt
+
+//for move or rename or both one file you can just do it on visual or do it with git like this (in unix)
+git mv file.txt file1.txt
+git mv file.txt directory/file.txt
+
+//if you edit your project and save it and before add to git you wanna rollback to previous edits
+git checkout -- index.html
+
+//if you edit your project and add to stage now you wanna roll back to working directory 
+git reset HEAD index.html
+
+//if you want change your latest commit ... your add that change and when you wannna commit that you must instead write this
+git commit --amend -m "again change"
+
+//if you want go back to optional head and reset all edit till where you want(this number is section of that head that you wanna back there)
+git reset --soft 1664846121321325
+
+
+
+

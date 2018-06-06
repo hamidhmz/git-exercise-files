@@ -1,8 +1,35 @@
 //if we want to know version of git
 git --varsion
+
 // if you whant to know what is user name and email in gitbash
 cat .gitconfig
+
 //if you want help
 git help
+
 //for start project and create repository we must be go on goal directory and type this command
 git init
+
+//for commit first we must add that file that have git init
+git add ./
+
+//then we must commit with optional message
+git commit -m "initial commit(optional message)"
+
+// when you wanna find out who and when commit is trigge
+git log 
+//you chan add number of latest log to show  you
+git log -n1
+git log -n2
+git log -n0
+//if you want to show you latest log since specific time
+git log --since=2012-10-01
+//if you want to show you latest log until specific time
+git log --until=2015-10-01
+//if you wanna to show you log of specific user
+git log --author="hamidhmz"
+//you can also use regx
+git log --grep="init"
+
+//for know what is to commit
+git status

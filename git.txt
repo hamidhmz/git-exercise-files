@@ -33,3 +33,13 @@ git log --grep="init"
 
 //for know what is to commit
 git status
+
+//if we whant to know what is change in file before add
+git diff
+//you can just tell what file you mean
+git diff git.txt
+//if you want to know what is added to staged section 
+git diff --staged
+
+//if you wanna delete a file you have two option for that 1 you can just delete that and add ./ and commit 2 you just write blow command
+git rm file.txt

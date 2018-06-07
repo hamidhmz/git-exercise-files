@@ -73,6 +73,26 @@ git clean -n
 //this is just for delete file which are unuseless files //37
 git clean -f
 
+//git ignore e.g //38
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+.env
+* ? [aeuio] [0-9]
+*.php
+//if you wanna write comment you can use # //39
+#some thing
+//go to https://gitignore.io //39
 
+//if you wanna git ignore one file which exist in repository before you must delete that from repository //41
+//if you wanna add new directory without any content you must add .gitkeep to it for commit to repository //42
 
 

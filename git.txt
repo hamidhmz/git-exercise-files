@@ -24,12 +24,24 @@ git log -n2
 git log -n0
 //if you want to show you latest log since specific time
 git log --since=2012-10-01
+//if you want to show you latest log since specific time //45
+git log --after=2012-10-01
 //if you want to show you latest log until specific time
 git log --until=2015-10-01
+//if you want to show you latest log until specific time //45
+git log --before=2015-10-01
 //if you wanna to show you log of specific user
 git log --author="hamidhmz"
 //you can also use regx
 git log --grep="init"
+//if you wanna see at one line //45
+git log --oneline
+//if you wanna see just 3 of that logs //45
+git log --oneline -3
+//you can just see from specific hash to another one //45
+git log fejiwjfeo..fijeiwjii --oneline
+//if you wanna see with details
+git log -p
 
 //for know what is to commit
 git status
@@ -91,8 +103,22 @@ yarn-error.log
 //if you wanna write comment you can use # //39
 #some thing
 //go to https://gitignore.io //39
-
 //if you wanna git ignore one file which exist in repository before you must delete that from repository //41
+
 //if you wanna add new directory without any content you must add .gitkeep to it for commit to repository //42
 
+//if you wanna see current tree //43 44
+git ls-tree master
+git ls-tree HEAD
+
+//if you wanna see previous tree(parent) //43 44
+git ls-tree master^
+git ls-tree master~
+git ls-tree HEAD^
+git ls-tree HEAD~1
+
+//if you wanna see double previous tree(grandparent) //43 44
+git ls-tree master^^
+git ls-tree master~2
+git ls-tree HEAD~2
 

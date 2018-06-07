@@ -40,20 +40,35 @@ git log --oneline
 git log --oneline -3
 //you can just see from specific hash to another one //45
 git log fejiwjfeo..fijeiwjii --oneline
-//if you wanna see with details
+//if you wanna see with details //45
 git log -p
+//and you have several option //45
+git log --format=oneline
+git log --format=short
+git log --format=medium
+git log --format=full
+git log --format=fuller
+git log --format=raw
+git log --graph
 
 //for know what is to commit
 git status
 
-//if we whant to know what is change in file before add
+//if we whant to know what is change in file before add //47
 git diff
+git diff fefwwfwe..qtrgres
+git diff fefwwfwe..HEAD
+git diff --stat --summary 1515166 HEAD
 //you can just tell what file you mean
 git diff git.txt
 //if you want to know what is added to staged section 
 git diff --staged
 //if you want to see just what is change blew command can show you
 git diff --color-words
+//git show is like git diff but it is complater and it just for one commit //47
+git show fiejwofwj
+//you can go to previouses brunch or tree //47
+git show fowjeijojio HEAD~2
 
 //if you wanna delete a file you have two option for that 1 you can just delete that and add ./ and commit 2 you just write blow command
 git rm file.txt
@@ -122,3 +137,11 @@ git ls-tree master^^
 git ls-tree master~2
 git ls-tree HEAD~2
 
+
+////branch////
+//if you wanna see what is your branch //49
+git branch
+//if you wanna create new branch //49
+git branch new_branch
+//if you wanna switch to new branch which you made it before //50
+git checkout new_branch

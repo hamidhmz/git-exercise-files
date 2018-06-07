@@ -59,8 +59,19 @@ git reset HEAD index.html
 //if you want change your latest commit ... your add that change and when you wannna commit that you must instead write this
 git commit --amend -m "again change"
 
-//if you want go back to optional head and reset all edit till where you want(this number is section of that head that you wanna back there)
+//if you want go back to optional head and reset all edit till where you want(this number is section of that head that you wanna back there) this just translate from repository to stage //35
 git reset --soft 1664846121321325
+//it will be same as soft one plus it instead of bring change to stage index  ,  bring change to working directory //35
+git reset --mixed 1664846121321325
+//or
+git reset 1664846121321325
+//this will be same of soft and mixed but it don't go to stage or working directory it just reset back and remove all new changes //36
+git reset --hard 1664846121321325
+
+//this is just for file which is unuseless files and tell you for premission for delete //37
+git clean -n
+//this is just for delete file which are unuseless files //37
+git clean -f
 
 
 

@@ -147,7 +147,17 @@ git branch new_branch
 git checkout new_branch
 //if you wanna know in log every where is every branch and you wanna see where is HEAD //51
 git log --graph --oneline --decorate --all
-//you can find different between 2 branch 
+//you can find different between 2 branch //53
 git diff master..new_branch
-//if you wanna know data in new_branch is in data in other branch
+//if you wanna know data in new_branch is exist in data in other branch //53
 git branch --merged
+//if you wanna edit your branch name //54
+git branch --move old_name new_name
+//or 
+git branch -m old_name new_name
+//if you wanna delete the branch /55
+git branch --delete branch_name
+//or 
+git branch -d branch_name
+//if you wanna equel to branch you must merge it
+git merge new_branch

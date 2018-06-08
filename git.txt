@@ -145,3 +145,9 @@ git branch
 git branch new_branch
 //if you wanna switch to new branch which you made it before //50
 git checkout new_branch
+//if you wanna know in log every where is every branch and you wanna see where is HEAD //51
+git log --graph --oneline --decorate --all
+//you can find different between 2 branch 
+git diff master..new_branch
+//if you wanna know data in new_branch is in data in other branch
+git branch --merged

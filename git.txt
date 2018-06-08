@@ -159,5 +159,57 @@ git branch -m old_name new_name
 git branch --delete branch_name
 //or 
 git branch -d branch_name
-//if you wanna equel to branch you must merge it
+//if you wanna equel to branch you must merge it //57
 git merge new_branch
+//if you have conflict problem //59
+git merge --abort
+//if you wanna checkout to other branch but you have edit in working directory and you must be commit but you don't wanna commit that so you must stash it //61
+git stash save "this is message of stash"
+//if you wanna see stash list //61 62
+git stash list
+//if you wanna see changes of specific stash  //61 62
+git stash show stash@{0}
+//if you wanna see more details //63 64
+git stash show -p stash@{0}
+//if you wanna overhoul all stash to current branch and delete all stash from warehouse //63 64
+git stash pop
+//if you wanna overhoul one specific stash to current branch and delete that stash from warehouse //63 64 65
+git stash pop stash@{0}
+//if you wanna delete some stash //63 64 65
+git stash drop stash@{0}
+//if you wanna delete all stash //65
+git stash clear
+
+//if you wanna see your project remote alias //67
+git remote
+//if you wanna add url remote //67
+git remote add <alias> <url>
+//if you wanna see remote push and fetch //67
+git remote -v
+//if you wanna remove your remote //68
+git remote rm <alias>
+//when you wanna push to remote master //68
+git push -u origin-git master
+
+//if you wanna see online branch //69
+git branch -r
+//if you wanna see all branch (online and offline) //69
+git branch -a
+
+//if you wanna get a project from some url you must clone it //69
+git clone <url>
+//if you have same name in that directory which you wanna donload project you must edit project name //69
+git clone <url> <new name>
+
+//if you wanna add branch to remote without tracking //70
+git push origin-git new_branch
+//if you wanna track the branch which add to remove in before //71
+git branch --track <branch_name> <alias>/<branch_name>
+
+//if you wanna fetch to origin/master(this is not your project file) //71
+git fetch <alias>
+//if you wanna see log for origin/master (this is not your project file) //73
+git log --oneline -5 <alias>/master
+//if you wanna see log for master (this is your project file) //73
+git log --oneline -5 master
+

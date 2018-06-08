@@ -1,3 +1,13 @@
+first 
+git fetch <alias>
+git pull 
+git commit -am "<your message >"
+git push <alias>
+
+
+
+
+
 //if we want to know version of git
 git --varsion
 
@@ -213,3 +223,4 @@ git log --oneline -5 <alias>/master
 //if you wanna see log for master (this is your project file) //73
 git log --oneline -5 master
 
+new fuck up some

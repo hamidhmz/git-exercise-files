@@ -20,6 +20,8 @@ git init
 
 //for commit first we must add that file that have git init
 git add ./
+//add all file even Untracked
+git add -A
 
 //then we must commit with optional message
 git commit -m "initial commit(optional message)"
@@ -198,6 +200,8 @@ git remote -v
 git remote rm <alias>
 //when you wanna push to remote master //68
 git push -u origin-git master
+//have 2 remote source 
+git remote add github https://github.com/Company_Name/repository_name.git
 
 //if you wanna see online branch //69
 git branch -r
@@ -220,3 +224,5 @@ git fetch <alias>
 git log --oneline -5 <alias>/master
 //if you wanna see log for master (this is your project file) //73
 git log --oneline -5 master
+
+
